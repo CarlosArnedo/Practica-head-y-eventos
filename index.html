@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function funcion_mensaje() {
+      var nom = document.getElementById("name").value;
+      var apellido_1 = document.getElementById("apellido_1").value;
+      alert ( 'Bienvenido ' + nom + apellido_1 ) 
+    }
+    
+    </script>
+
+</head>
+<body>
+    <h1 id="titulo"> Practica html head y eventos </h1>
+Introduce tu nombre:  <input type="text" id="name" >
+Introduce tu apellido: <input type="text" id="apellido_1" onblur="funcion_mensaje()">
+</body>
+</html>
